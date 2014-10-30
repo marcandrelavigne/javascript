@@ -50,24 +50,4 @@ $(window).scroll(function(event) {
 
 });
 
-$(window).scroll(function(event) {
-
-  $(".module1").each(function(i, el) {
-    var el = $(el);
-    if (el.visible(true)) {
-      el.addClass("come-left");
-    }
-  });
-
-});
-
-$(window).scroll(function(event) {
-
-  $(".module2").each(function(i, el) {
-    var el = $(el);
-    if (el.visible(true)) {
-      el.addClass("come-right");
-    }
-  });
-
 });
