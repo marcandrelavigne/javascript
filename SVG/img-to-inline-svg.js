@@ -1,7 +1,7 @@
-/* ========================================================= */
-/*	Replace all SVG images with inline SVG					 */
-/*	Add the class .svg to the img tag and voilà!			 */
-/* ========================================================= */
+/* ========================================================
+	Replace all SVG images with inline SVG
+	Add the class .svg to the img tag and voilà!
+========================================================= */
 
 jQuery('img.svg').each(function(){
     var $img = jQuery(this);
@@ -10,6 +10,7 @@ jQuery('img.svg').each(function(){
     var imgURL = $img.attr('src');
 
     jQuery.get(imgURL, function(data) {
+
         // Get the SVG tag, ignore the rest
         var $svg = jQuery(data).find('svg');
 
