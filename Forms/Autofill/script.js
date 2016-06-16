@@ -45,10 +45,10 @@ jQuery(document).ready(function($) {
 		$.fn.extend({
 			autofill: function(data, options) {
 				var settings = {
-						findbyname: true,
-						restrict: true
-					},
-					self = this;
+					findbyname: true,
+					restrict: true
+				},
+				self = this;
 
 				if ( options ) {
 					$.extend( settings, options );
