@@ -1,0 +1,112 @@
+html {
+	background: rgb(255,255,255);
+	background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(241,241,241,1) 50%, rgba(225,225,225,1) 51%, rgba(246,246,246,1) 100%);
+	background: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%,rgba(241,241,241,1) 50%,rgba(225,225,225,1) 51%,rgba(246,246,246,1) 100%);
+	background: linear-gradient(to bottom, rgba(255,255,255,1) 0%,rgba(241,241,241,1) 50%,rgba(225,225,225,1) 51%,rgba(246,246,246,1) 100%);
+	height: 100%;
+	 overflow-x: hidden;
+}
+body {
+    font-family: "helvetica", sans-serif;
+    font-weight: 300;
+    color: #ffffff;
+    font-size: .9em;
+    -webkit-perspective: 1100;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    margin: 0;
+    padding: 0;
+}
+.nexus {
+	background-image: url(../img/Nexus-5X.png);
+	width: 500px;
+	height: 833px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+#device {
+    position: absolute;
+    background: transparent;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0
+}
+#homescreen {
+    width: 345px;
+    height: 609px;
+    top: 109px;
+    left: 79px;
+    position: absolute;
+    -webkit-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+    opacity: .95;
+    background-image: url('../img/background.jpg');
+    background-repeat: no-repeat;
+}
+#homescreen figure {
+    width: 64px;
+    text-align: center;
+    float: left;
+    margin: 20px;
+    text-shadow: 0 1px 0 #555;
+}
+#homescreen img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 4px -2px rgba(0, 0, 0, .6);
+}
+select {
+    font-size: 1.2em;
+}
+input {
+    width: 15%
+}
+header {
+    color: #00001f;
+}
+footer {
+	background-color: rgba(255, 255, 255, .5);
+	padding: 20px;
+	position: absolute;
+	bottom: 0;
+}
+
+#popup {
+	width: 345px;
+    height: 609px;
+    top: 0;
+    left: 0;
+    position: absolute;
+    display: none;
+}
+
+#popup iframe {
+	width: 345px;
+    height: 609px;
+    border: none;
+}
+
+@media screen and ( max-width: 480px ) {
+
+	.nexus {
+		background-image: none;
+		width: 100%;
+		height: 100%;
+		position: relative;
+		top: 0;
+		left: 0;
+		transform: translate(0, 0);
+	}
+	#homescreen {
+    	width: 100%;
+		height: 100%;
+		top: 0;
+		left: 0;
+    }
+
+}

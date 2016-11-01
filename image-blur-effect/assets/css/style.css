@@ -1,0 +1,38 @@
+body {
+	margin: 0;
+	height: 100vh;
+}
+.blur-upper {
+	height: 100px;
+	overflow: hidden;
+	background-color: #fff;
+	border-bottom: #ccc;
+	position: fixed;
+	z-index: 10;
+}
+.blur-upper img {
+	width: 500px;
+}
+.blur-contents {
+	position: relative;
+	height: 70px;
+}
+.blur-contents img {
+	width: 500px;
+}
+.blur-contents-clone {
+	position: absolute;
+	top: 0;
+	width: 100%;
+	opacity: .9;
+}
+.blur-svg {
+	height: 70px;
+}
+footer {
+	background-color: rgba(255, 255, 255, .5);
+	width: 100%;
+	padding: 20px;
+	position: absolute;
+	bottom: 0;
+}

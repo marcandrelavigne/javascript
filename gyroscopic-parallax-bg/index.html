@@ -1,0 +1,44 @@
+<html>
+	<head>
+		<meta charset="utf-8"/>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="robots" content="noindex,follow"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"/>
+		<title>Gyroscopic Parallax Background</title>
+		<link rel="stylesheet" href="assets/css/style.css" type="text/css" />
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+		<script src="assets/js/functions.js"></script>
+	</head>
+
+	<body>
+
+		<div class="nexus">
+			<section id="homescreen">
+
+				<figure id="app1">
+					<img src="assets/img/app-btn.jpg">
+					<figcaption>App 1</figcaption>
+				</figure>
+
+				<figure id="app2">
+					<img src="assets/img/app-btn.jpg">
+					<figcaption>App 2</figcaption>
+				</figure>
+
+				<figure id="app3">
+					<img src="assets/img/app-btn.jpg">
+					<figcaption>App 3</figcaption>
+				</figure>
+
+			</section>
+		</div>
+
+		<div style="display: none;">
+			<input type="range" id="distance" onchange="orientationChanged()" min="1" max="100" value="50" step="1">
+			<select id="photo" onchange="changePhoto()">
+				<option value="assets/img/background.jpg" selected>Shocks</option>
+			</select>
+		</div>
+
+	</body>
+</html>
