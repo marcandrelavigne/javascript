@@ -1,7 +1,7 @@
 # Javascript
 
 <h2>Accessibility</h2>
-- <b>Mobile Phone Numbre :</b> Permet d'afficher le lien sur le numéro de téléphone lorsque la page est visionné sur mobile seulement. (Nécessite jQuery)
+- <b>Mobile Phone Number :</b> Permet d'afficher le lien sur le numéro de téléphone lorsque la page est visionné sur mobile seulement. (Nécessite jQuery)
 
 <h2>Forms</h2>
 - <b>Autofill :</b> Permet d'afficher un bouton secret servant à auto-populer les champs du formulaire.
