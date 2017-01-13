@@ -1,43 +1,45 @@
 // Fade-in Toggle
 $("[id^=toggle]").click(function() {		
-		if ($(this).hasClass('open')) {
-			$('#togglcontent'+ this.id.match(/\d+/) ).slideUp("slow").removeClass('open');
-			$(this).removeClass('open');
-		} else {
-			$('#togglcontent'+ this.id.match(/\d+/) ).slideDown("slow").addClass('open');
-			$(this).addClass('open');
-		}
+	if ($(this).hasClass('open')) {
+		$('#togglcontent'+ this.id.match(/\d+/) ).slideUp("slow").removeClass('open');
+		$(this).removeClass('open');
+	} else {
+		$('#togglcontent'+ this.id.match(/\d+/) ).slideDown("slow").addClass('open');
+		$(this).addClass('open');
+	}
 });
+
+
 
 /* =================================
 Markup :
 
 <div id="togglcontent1" style="display: none;">
-		<p>Toggle Content</p>
+	<p>Toggle Content</p>
 </div>
-<a id="toggle1" class="fade-in">
-		Open the toggle
-</a>
+<a id="toggle1" class="fade-in">Open the toggle</a>
 
 ================================= */
+
+
 
 /* =================================
 Style :
 
 div[id^=togglcontent]{
 		
-    p {
-			opacity: 0;
-			transition: 1s;
-		}
+	p {
+		opacity: 0;
+		transition: 1s;
+	}
 		
-		&.open {
+	&.open {
 			
-			p {
-				opacity: 1;
-			}
-		
+		p {
+			opacity: 1;
 		}
+		
+	}
 
 }
 
