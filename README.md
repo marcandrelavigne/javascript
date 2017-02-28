@@ -16,7 +16,7 @@
 
 # jQuery Snippets
 
-<b>Afficher le nombre d'années passées depuis une certain date</b>
+<b>- Afficher le nombre d'années passées depuis une certain date</b>
 ```javascript
 function getAge(dateString) {
   var today = new Date();
@@ -32,7 +32,7 @@ function getAge(dateString) {
 $('.age').text('Depuis plus de ' + getAge("2014/06/21") + ' ans');
 ```
 
-<b>Remplacer le balises <pre><img></pre> par des balises <pre><svg></svg></pre></b>
+<b>- Remplacer le balises img par des balises svg</b>
 ```javascript
 jQuery('img.svg').each(function(){
   var $img = jQuery(this);
