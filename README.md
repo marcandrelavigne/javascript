@@ -13,3 +13,21 @@
 <h2>SVG</h2>
 - <b>Img to Inline SVG :</b> Transforme les balises Img en SVG à l'aide de la classe .svg
 
+# jQUERY Snippets
+
+<h2>Afficher le nombre d'années passées depuis une certain date</h2>
+
+<code>
+function getAge(dateString) {
+  var today = new Date();
+  var birthDate = new Date(dateString);
+  var age = today.getFullYear() - birthDate.getFullYear();
+  var m = today.getMonth() - birthDate.getMonth();
+  if (m &lt; 0 || (m === 0 &amp;&amp; today.getDate() &lt; birthDate.getDate())) {
+    age--;
+  }
+  return age;
+};
+
+$('.age').text('Depuis plus de ' + getAge("2014/06/21") + ' ans');
+</code>
