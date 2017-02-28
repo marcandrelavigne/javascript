@@ -32,7 +32,7 @@ function getAge(dateString) {
 $('.age').text('Depuis plus de ' + getAge("2014/06/21") + ' ans');
 ```
 
-<b>Remplacer le balises <code><img></code> par des balises <code><svg></svg></code></b>
+<b>Remplacer le balises <pre><img></pre> par des balises <pre><svg></svg></pre></b>
 ```javascript
 /* ========================================================
 Replace all SVG images with inline SVG
