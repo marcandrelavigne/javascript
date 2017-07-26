@@ -4,15 +4,6 @@ jQuery(document).ready(function($) {
 	
 	// Add .oldandroid Class to body
 	if(is_android) {
-		jQuery('body').addClass('oldandroid');
+		jQuery('body').addClass('💩');
 	}
-  
-	// Replace SVG for PNG
-	/*
-	if(jQuery('body').hasClass('oldandroid')){
-		var new_src = jQuery('.logo img').attr('src').replace('.svg','.png');
-		jQuery('.logo img').attr('src',new_src);
-	}
-	*/
-
 });
