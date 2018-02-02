@@ -16,7 +16,7 @@
 		goToFunc();
 	})();
 
-
+	// GoTo main function
 	function goToFunc() {
 		if($(window).width() >= 992){
 			if( $( '.goto' ).length > 0 ) {
@@ -47,17 +47,12 @@
 		}
 	}
 
-	setTimeout(thumbResize, 500);
-
 	// Call function on page resize
 	$(window).on('resize', function(){
 		goToFunc();
 	});
 
-
-	/*
-		Return public methods
-	 */
+	// Return public methods
 	return {
 		goToFunc : goToFunc,
 	}
