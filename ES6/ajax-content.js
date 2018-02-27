@@ -1,6 +1,6 @@
 /*
 	Ajax Content
-  Fetch content from a JSON file
+	Fetch content from a JSON file
  */
 
 fetch('path/to/file.json')
