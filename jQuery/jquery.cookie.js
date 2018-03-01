@@ -1,5 +1,6 @@
 /*
  * jQuery Cookie Plugin
+ * Pas sure que c'est tant utile en 2018, mais bon... Au cas.
  */
 
 (function (factory) {
@@ -109,3 +110,42 @@
 	};
 
 }));
+
+
+
+;(function jqueryCookie($) {
+
+	// Create Cookie
+	function createCookie() {
+		$('#hello').click(function(){
+			$.cookie('cookie-name', true);
+		});	
+	}
+	
+	
+	// Delete the Cookie
+	function deleteCookie() {
+		$('#goodbye').click(function(){
+			$.cookie('cookie-name', false);
+		});
+	}
+	
+	// If Cookie Exists
+	function lookupCookie() {
+		if($.cookie('cookie-name') === 'true'){
+			// Do something.
+		} else {
+			// Do something else.
+		}
+	}
+	
+	
+	// Detect Cookie
+	function detectCookie() {
+		$.cookie('test_cookie', 'cookie_value', { path: '/' });
+			if (!$.cookie('test_cookie') === 'cookie_value') {
+			$( "#dialogcookie" ).dialog();
+		}
+	}
+
+})(jQuery);
