@@ -1,6 +1,6 @@
 /*
-	SQUARE THUMBS
-	------
+  SQUARE THUMBS
+  ------
   Using jQuery, auto resize an image container, forcing it to be square (height = width).
   To call it from another function, use squareThumbs.thumbResize();
  */
