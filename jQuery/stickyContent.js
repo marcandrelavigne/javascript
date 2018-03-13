@@ -11,7 +11,7 @@
 	    var div_top    = $('.stickyDiv').offset().top;
 	    var footer_top = $('.footer').offset().top;
       
-      // Activate sticky Div when it get past the window's top
+      	    // Activate sticky Div when it get past the window's top
 	    if (window_top > div_top) {
 	        $('.stickyDiv').addClass('fixedContent');
 	        $('.stickyDiv').removeClass('bottomReached');
@@ -20,7 +20,7 @@
 	        $('.stickyDiv').removeClass('bottomReached');
 	    }
       
-      // Desactivate sticky when reaching the footer
+      	    // Desactivate sticky when reaching the footer
 	    if (window_top > footer_top - $(window).height() ) {
 	        $('.stickyDiv').removeClass('fixedContent');
 	        $('.stickyDiv').addClass('bottomReached');
