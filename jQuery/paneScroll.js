@@ -8,16 +8,17 @@
 
 ;paneScroll = (function($) {
 
-	/**
-	 * INITIALISE
-	 * ----------
-	 *
-	 * @return {undefined}
+	/*
+	 * Initialise
 	 */
 	(function init() {
 		manualScroll();
 	})();
-
+	
+	/*
+	 * Manual Scroll
+	 * Scroll when clicking on a button
+	 */
 	function manualScroll() {
 		var windowHeight = $(window).height();
 
@@ -30,7 +31,7 @@
 	}
 
 	/*
-		Return public methods
+	 * Return public methods
 	 */
 	return {
 		manualScroll : manualScroll,
