@@ -18,31 +18,15 @@
 
 	// GoTo main function
 	function goToFunc() {
-		if($(window).width() >= 992){
-			if( $( '.goto' ).length > 0 ) {
-				$( '.goto[href^="#"]' ).on( 'click', function() {
-					var me =$( this ),
-						the_id = me.attr( 'href' );
-	
-					$( 'html, body' ).animate( {
-						scrollTop: $( the_id ).offset().top-92
-					}, 'slow' );
-	
-					return false;
-				});
-			}
-		} else if($(window).width() <= 991){
-			if( $( '.goto' ).length > 0 ) {
-				$( '.goto[href^="#"]' ).on( 'click', function() {
-					var me =$( this ),
-						the_id = me.attr( 'href' );
-	
-					$( 'html, body' ).animate( {
-						scrollTop: $( the_id ).offset().top-65
-					}, 'slow' );
-	
-					return false;
-				});
+		if( $( '.goto' ).length > 0 ) {
+			if($(window).width() >= 992){
+				$( 'html, body' ).animate( {
+					scrollTop: $( the_id ).offset().top-92
+				}, 'slow' );
+			} else {
+				$( 'html, body' ).animate( {
+					scrollTop: $( the_id ).offset().top-0
+				}, 'slow' );
 			}
 		}
 	}
